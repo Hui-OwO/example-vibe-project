@@ -1,0 +1,8 @@
+{
+  "name": "write-unit-tests",
+  "description": "Next.js + TypeScript(Vitest) 프로젝트에서 기존 컨벤션을 그대로 따르는 유닛 테스트를 작성하고 실행까지 검증하는 스킬을 제공합니다.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hui-OwO"
+  }
+}

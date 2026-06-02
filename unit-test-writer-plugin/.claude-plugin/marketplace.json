@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "unit-test-writer-marketplace",
+  "description": "유닛 테스트 작성 스킬을 담은 로컬 마켓플레이스",
+  "owner": {
+    "name": "Hui-OwO"
+  },
+  "plugins": [
+    {
+      "name": "write-unit-tests",
+      "description": "Next.js + TypeScript(Vitest) 프로젝트에서 기존 컨벤션을 그대로 따르는 유닛 테스트를 작성하고 실행까지 검증합니다.",
+      "category": "testing",
+      "source": "./plugins/write-unit-tests"
+    }
+  ]
+}
