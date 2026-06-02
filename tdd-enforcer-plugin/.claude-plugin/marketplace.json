@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tdd-enforcer-marketplace",
+  "description": "TDD 가드 훅을 담은 로컬 마켓플레이스",
+  "owner": {
+    "name": "Hui-OwO"
+  },
+  "plugins": [
+    {
+      "name": "tdd-enforcer",
+      "description": "TDD 강제 — 테스트 없는 새 export(함수/클래스/화살표함수) 추가를 PreToolUse 훅으로 차단하고 작성 가이드를 제공합니다.",
+      "category": "testing",
+      "source": "./plugins/tdd-enforcer"
+    }
+  ]
+}

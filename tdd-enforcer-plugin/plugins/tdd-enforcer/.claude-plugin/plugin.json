@@ -1,0 +1,8 @@
+{
+  "name": "tdd-enforcer",
+  "description": "TDD 강제 — 테스트 없는 함수 추가 차단 + 작성 가이드",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hui-OwO"
+  }
+}
