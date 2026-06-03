@@ -1,0 +1,26 @@
+{
+  "skill_name": "run-changed-tests",
+  "evals": [
+    {
+      "id": 0,
+      "name": "vitest-related-happy-path",
+      "prompt": "lib/concepts.ts 파일 맨 아래에 `// touched for testing` 주석을 한 줄 추가해줘. 그리고 내가 방금 바꾼 것과 연관된 테스트만 골라서 실행해줘. 전체 스위트는 돌리지 마.",
+      "expected_output": "스크립트로 lib/concepts.ts 변경을 감지하고 `vitest related --run lib/concepts.ts`로 tests/concepts.test.ts만 실행. 전체 스위트(errors.test.ts 포함)는 돌리지 않음. 어떤 기준으로 무엇을 돌렸는지와 통과 결과를 보고.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "no-related-test-asks-user",
+      "prompt": "lib/logger.ts 맨 위에 `// edited` 주석을 한 줄 넣고, 그 변경과 관련된 테스트만 돌려줘.",
+      "expected_output": "lib/logger.ts에는 대응 테스트가 없으므로 vitest related가 0건. 이때 전체 스위트를 임의로 돌리지 말고, 연관 테스트를 못 찾았음을 알리고 (전체 실행 / 파일 지정 / 테스트 작성) 어떻게 할지 사용자에게 확인 요청.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "changed-test-file-directly",
+      "prompt": "tests/errors.test.ts 안에 의미 없는 빈 줄 하나 추가하고, 바뀐 테스트만 실행해줘. 다른 테스트까지 다 돌릴 필요는 없어.",
+      "expected_output": "변경된 테스트 파일 tests/errors.test.ts 자체를 실행 대상으로 잡아 그 파일만 실행. concepts.test.ts는 돌리지 않음.",
+      "files": []
+    }
+  ]
+}

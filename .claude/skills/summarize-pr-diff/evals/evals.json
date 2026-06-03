@@ -1,0 +1,23 @@
+{
+  "skill_name": "summarize-pr-diff",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "PR #142 좀 요약해줘. 리뷰 들어가기 전에 뭐가 바뀌었는지 빠르게 보고 싶어.",
+      "expected_output": "gh pr view/diff로 PR을 가져와 한 줄 요약 + 의도 단위 변경점 + 왜 + 리뷰 주의점을 한국어로 간결하게 출력",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "지금 이 브랜치에서 main 대비 내가 뭘 바꿨는지 정리해줘.",
+      "expected_output": "로컬 git diff main...HEAD + git log로 변경을 모아 의도 단위로 묶어 요약. PR 없이 로컬 경로로 분기",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "https://github.com/acme/web/pull/77 이거 변경사항 핵심만 짚어줘. 의존성이나 설정 건드린 거 있으면 꼭 알려주고.",
+      "expected_output": "URL에서 PR 번호 추출, gh로 가져와 요약하되 새 의존성/설정 변경을 '리뷰 시 주의할 부분'에 명시",
+      "files": []
+    }
+  ]
+}

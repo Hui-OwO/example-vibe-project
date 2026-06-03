@@ -8,3 +8,9 @@ out
 *.tsbuildinfo
 next-env.d.ts
 coverage
+
+# Claude Code 로컬/스크래치 산출물 — 추적 대상 아님
+.claude/settings.local.json
+.claude/worktrees/
+.claude/agent-memory/
+.claude/skills/*-workspace/
