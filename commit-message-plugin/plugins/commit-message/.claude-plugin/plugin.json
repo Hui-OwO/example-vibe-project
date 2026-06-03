@@ -1,0 +1,8 @@
+{
+  "name": "commit-message",
+  "description": "스테이징된 변경을 분석해 Conventional Commits 제목(영어)과 필요 시 한국어 본문으로 고품질 커밋 메시지를 작성하고 커밋까지 생성하는 스킬을 제공합니다.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hui-OwO"
+  }
+}
