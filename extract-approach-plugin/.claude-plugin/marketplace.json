@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "extract-approach-marketplace",
+  "description": "학습 노트 추출 스킬 + learning law 강제 훅을 담은 로컬 마켓플레이스",
+  "owner": {
+    "name": "Hui-OwO"
+  },
+  "plugins": [
+    {
+      "name": "extract-approach",
+      "description": "비자명한 문제를 해결한 뒤 접근법을 learnings/<date>-<slug>.md 노트로 추출하는 스킬과, 노트 없이 세션을 끝내려 하면 1회 리마인드하는 Stop 훅을 제공합니다.",
+      "category": "productivity",
+      "source": "./plugins/extract-approach"
+    }
+  ]
+}
