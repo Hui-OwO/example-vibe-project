@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "run-changed-tests-marketplace",
+  "description": "변경분 연관 테스트 실행 스킬을 담은 로컬 마켓플레이스",
+  "owner": {
+    "name": "Hui-OwO"
+  },
+  "plugins": [
+    {
+      "name": "run-changed-tests",
+      "description": "변경된 파일과 연관된 테스트만 골라 실행합니다. Vitest·Jest·pytest 러너를 자동 감지합니다.",
+      "category": "testing",
+      "source": "./plugins/run-changed-tests"
+    }
+  ]
+}

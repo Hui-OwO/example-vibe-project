@@ -1,0 +1,8 @@
+{
+  "name": "run-changed-tests",
+  "description": "변경된 파일과 연관된 테스트만 골라 실행합니다. Vitest·Jest·pytest 러너를 자동 감지합니다.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hui-OwO"
+  }
+}

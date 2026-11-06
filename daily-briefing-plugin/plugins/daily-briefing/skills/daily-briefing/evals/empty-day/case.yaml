@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: empty-day
+expected_outcome: |
+  일정 0건, 열린/머지 PR 0건, CI 최신 run은 통과인 조용한 하루.
+  세 섹션이 모두 존재하되 비면 "- (없음)"으로 표기하고, 없는 항목을
+  지어내지 않으며, CI 실패를 🔴로 잘못 올리지 않는다.
+context:
+  scaffold_script: place-files.sh

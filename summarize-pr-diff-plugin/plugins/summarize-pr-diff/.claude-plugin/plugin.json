@@ -1,0 +1,8 @@
+{
+  "name": "summarize-pr-diff",
+  "description": "PR diff를 읽고 리뷰어가 빠르게 파악할 수 있도록 한국어로 간결하게 요약합니다.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hui-OwO"
+  }
+}

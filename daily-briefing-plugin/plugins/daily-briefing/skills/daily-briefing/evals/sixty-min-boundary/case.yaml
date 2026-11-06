@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: sixty-min-boundary
+expected_outcome: |
+  BRIEFING_NOW=2026-11-05 11:30 기준으로 미팅이 결정적으로 분류된다:
+  헤더 날짜는 2026-11-05 (목), 이미 끝난 09:30 스탠드업은 제외,
+  진행 중인 11:00 1:1은 🔴, 60분 넘게 남은 15:00 리뷰는 🟡.

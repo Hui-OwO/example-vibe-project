@@ -1,0 +1,10 @@
+### AUTHORED_OPEN
+{"repo":"acme/app","num":56,"title":"feat: add search filter","author":"Hui-OwO","draft":false,"updated":"2026-11-05T09:50:00Z","created":"2026-11-04T10:00:00Z","url":"https://github.com/acme/app/pull/56"}
+{"repo":"acme/app","num":55,"title":"fix: null guard in parser","author":"Hui-OwO","draft":false,"updated":"2026-11-05T09:30:00Z","created":"2026-11-04T09:00:00Z","url":"https://github.com/acme/app/pull/55"}
+{"repo":"acme/app","num":54,"title":"refactor: extract http client","author":"Hui-OwO","draft":false,"updated":"2026-11-05T09:10:00Z","created":"2026-11-03T09:00:00Z","url":"https://github.com/acme/app/pull/54"}
+{"repo":"acme/app","num":53,"title":"docs: update readme","author":"Hui-OwO","draft":false,"updated":"2026-11-05T08:40:00Z","created":"2026-11-03T08:00:00Z","url":"https://github.com/acme/app/pull/53"}
+{"repo":"acme/app","num":52,"title":"chore: bump eslint","author":"Hui-OwO","draft":false,"updated":"2026-11-05T08:10:00Z","created":"2026-11-02T08:00:00Z","url":"https://github.com/acme/app/pull/52"}
+{"repo":"acme/app","num":51,"title":"test: add parser cases","author":"Hui-OwO","draft":false,"updated":"2026-11-04T18:00:00Z","created":"2026-11-02T07:00:00Z","url":"https://github.com/acme/app/pull/51"}
+{"repo":"acme/app","num":50,"title":"feat: pagination","author":"Hui-OwO","draft":false,"updated":"2026-11-04T16:00:00Z","created":"2026-11-01T07:00:00Z","url":"https://github.com/acme/app/pull/50"}
+### REVIEW_REQUESTED
+### MERGED_RECENT

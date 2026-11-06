@@ -1,0 +1,7 @@
+### AUTHORED_OPEN
+{"repo":"Hui-OwO/example-vibe-project","num":42,"title":"feat(agent-loop): add retry backoff","author":"Hui-OwO","draft":false,"updated":"2026-11-04T23:10:00Z","created":"2026-11-02T08:00:00Z","url":"https://github.com/Hui-OwO/example-vibe-project/pull/42"}
+{"repo":"Hui-OwO/example-vibe-project","num":45,"title":"WIP: memory hierarchy refactor","author":"Hui-OwO","draft":true,"updated":"2026-11-04T18:00:00Z","created":"2026-11-04T18:00:00Z","url":"https://github.com/Hui-OwO/example-vibe-project/pull/45"}
+### REVIEW_REQUESTED
+{"repo":"acme/api-gateway","num":311,"title":"fix(auth): token refresh race condition","author":"devkim","draft":false,"updated":"2026-11-03T09:00:00Z","created":"2026-11-02T09:00:00Z","url":"https://github.com/acme/api-gateway/pull/311"}
+### MERGED_RECENT
+{"repo":"Hui-OwO/example-vibe-project","num":40,"title":"chore: bump deps","author":"Hui-OwO","draft":false,"updated":"2026-11-05T01:00:00Z","created":"2026-11-04T20:00:00Z","url":"https://github.com/Hui-OwO/example-vibe-project/pull/40"}

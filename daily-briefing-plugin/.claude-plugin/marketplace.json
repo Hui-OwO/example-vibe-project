@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "daily-briefing-marketplace",
+  "description": "아침 브리핑(일정·PR·CI 종합) 스킬을 담은 로컬 마켓플레이스",
+  "owner": {
+    "name": "Hui-OwO"
+  },
+  "plugins": [
+    {
+      "name": "daily-briefing",
+      "description": "캘린더 일정, 내 GitHub PR, 기본 브랜치 CI 상태를 모아 🔴/🟡/🟢 신호등 우선순위로 분류한 콘솔 마크다운 브리핑을 만듭니다. gh·gcalcli 중 사용 가능한 소스만으로도 동작합니다.",
+      "category": "productivity",
+      "source": "./plugins/daily-briefing"
+    }
+  ]
+}

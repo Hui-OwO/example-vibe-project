@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: many-open-prs
+expected_outcome: |
+  열린 authored PR이 7개. 가장 최근 업데이트된 5개에만 pr-summary 상세
+  (+추가 -삭제·파일수·폴더)를 붙이고, 나머지 2개는 "#번호 제목 — @작성자"로만
+  간단히 나열한다. 7개 모두 어떤 형태로든 브리핑에 등장한다.
+context:
+  scaffold_script: place-files.sh

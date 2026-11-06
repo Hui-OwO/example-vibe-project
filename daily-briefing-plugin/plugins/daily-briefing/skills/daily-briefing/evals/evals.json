@@ -1,0 +1,48 @@
+{
+  "skill_name": "daily-briefing",
+  "notes": "이 환경에는 gh가 설치돼 있지 않아 각 실행은 번들 데모 데이터(BRIEFING_DEMO=1)로 돌린다. 평가 대상은 step2~5의 LLM 로직(변경분 분석·실패 로그 요약·신호등 분류·마크다운 포맷)이다. 미팅 시급성(🔴 ≤60분)은 실행 시점 벽시계에 의존해 비결정적이므로 assertion은 시계-무관한 PR/CI 분류·포맷·요약에 한정한다.",
+  "evals": [
+    {
+      "id": 0,
+      "name": "standard-morning-brief",
+      "prompt": "좋은 아침! 오늘 데일리 브리핑 해줘.",
+      "expected_output": "# 🌄 Daily Briefing 헤더 + 🔴/🟡/🟢/📊 5개 섹션. CI 실패(run 9001)와 CHANGES_REQUESTED인 #42는 🔴, 리뷰요청 #311은 🟡, draft #45와 통과/머지 건은 🟢. 각 항목 한 줄 + 액션(참석/리뷰/수정).",
+      "assertions": [
+        "출력이 '# 🌄 Daily Briefing' 헤더로 시작한다",
+        "🔴 / 🟡 / 🟢 / 📊 네 섹션이 모두 존재한다",
+        "main CI 실패(run 9001)가 🔴 섹션에 분류된다",
+        "내가 author이고 reviewDecision=CHANGES_REQUESTED인 #42가 🔴 섹션에 있다",
+        "리뷰 요청받은 acme/api-gateway #311이 🟡 섹션에 있다",
+        "draft인 #45와 최근 머지된 #40이 🟢 섹션에 있다",
+        "🔴 각 항목에 → 로 액션(참석/응답/수정 등)이 명시된다"
+      ],
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "explicit-multisource-priority",
+      "prompt": "하루 시작하기 전에 오늘 일정이랑 내 PR들, main CI 상태까지 우선순위로 정리해줘. 급한 것부터 보고 싶어.",
+      "expected_output": "세 소스 모두 수집·분류된 신호등 브리핑. main CI 실패 원인이 1~2문장으로 추정됨(전체 로그 덤프 없음). PR 변경 규모(+/-, 폴더) 한 줄 요약 포함.",
+      "assertions": [
+        "세 소스(캘린더 일정 · 내 PR · main CI) 항목이 모두 브리핑에 등장한다",
+        "CI 실패 원인이 1~2문장으로 추정되고 전체 로그를 그대로 덤프하지 않는다",
+        "열린 PR의 변경 규모가 +추가 -삭제 숫자와 폴더로 한 줄 요약된다",
+        "항목이 🔴/🟡/🟢 신호등 3단계로 분류되고 급한 것이 위에 온다"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "casual-urgent-focus",
+      "prompt": "오늘 뭐부터 손대야 돼? 급한 것만 빨간불로 짚어줘.",
+      "expected_output": "🔴 꼭 해야 할 일이 가장 먼저, 명확한 액션과 함께 강조됨. 전체 신호등 구조는 유지하되 급한 항목이 분명히 드러남.",
+      "assertions": [
+        "🔴 꼭 해야 할 일 섹션이 가장 먼저 나온다",
+        "🔴 각 항목에 명확한 액션(응답/수정 등)이 붙는다",
+        "급한 항목만이 아니라 전체 신호등 구조(🔴/🟡/🟢)가 유지된다",
+        "main CI 실패와 #42 CHANGES_REQUESTED가 🔴로 강조된다"
+      ],
+      "files": []
+    }
+  ]
+}

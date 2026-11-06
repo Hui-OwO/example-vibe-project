@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "summarize-pr-diff-marketplace",
+  "description": "PR diff 요약 스킬을 담은 로컬 마켓플레이스",
+  "owner": {
+    "name": "Hui-OwO"
+  },
+  "plugins": [
+    {
+      "name": "summarize-pr-diff",
+      "description": "PR diff를 읽고 리뷰어가 빠르게 파악할 수 있도록 한국어로 간결하게 요약합니다.",
+      "category": "git",
+      "source": "./plugins/summarize-pr-diff"
+    }
+  ]
+}
