@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ppt-generator-marketplace",
+  "description": "PPT 발표자료를 설계·작성하고 .pptx로 출력하는 스킬을 담은 로컬 마켓플레이스",
+  "owner": {
+    "name": "Hui-OwO"
+  },
+  "plugins": [
+    {
+      "name": "ppt-generator",
+      "description": "주제·청중·발표 시간·톤을 먼저 확인하고 목차를 설계한 뒤, 각 슬라이드의 제목·핵심 메시지·본문·발표자 노트를 작성하고 번들 스크립트로 .pptx 파일까지 출력합니다.",
+      "category": "productivity",
+      "source": "./plugins/ppt-generator"
+    }
+  ]
+}
